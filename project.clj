@@ -1,6 +1,6 @@
 (defproject clojure-example-logback-integration "0.1.0-SNAPSHOT"
   :description "Simple integration of logback into clojure.tools.logging with macro-ed logs to swap in other logging libs"
-  :url "http://example.com/FIXME"
+  :url "http://github.com/vaughnd/clojure-example-logback-integration"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.4.0"]
