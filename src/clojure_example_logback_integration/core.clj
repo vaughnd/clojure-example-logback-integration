@@ -1,6 +1,5 @@
 (ns clojure-example-logback-integration.core
-  (:require [clojure-example-logback-integration.log :as log])
-)
+  (:require [clojure-example-logback-integration.log :as log]))
 
 (defn -main
   [& args]
