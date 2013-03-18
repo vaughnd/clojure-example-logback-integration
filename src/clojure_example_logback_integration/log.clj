@@ -1,14 +1,15 @@
 (ns clojure-example-logback-integration.log
-  (:require [clojure.tools.logging :as log]))
+  (:require [clojure.tools.logging :as log]
+            [clojure.tools.logging.impl :as logimpl]))
 
 (defn set-log-level!
   "Pass keyword :error :info :debug"
   [level]
   (let [logger (logimpl/get-logger log/*logger-factory* "clojure-example-logback-integration")]
     (case level
-      :debug (.setLevel logger Level/DEBUG)
-      :info (.setLevel logger Level/INFO)
-      :error (.setLevel logger Level/ERROR))))
+      :debug (.setLevel logger ch.qos.logback.classic.Level/DEBUG)
+      :info (.setLevel logger ch.qos.logback.classic.Level/INFO)
+      :error (.setLevel logger ch.qos.logback.classic.Level/ERROR))))
 
 (defmacro debug [& args]
   `(log/debug (str ~@args)))
