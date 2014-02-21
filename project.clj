@@ -4,8 +4,7 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
-                 [org.clojure/tools.logging "0.2.6"]
-                 [ch.qos.logback/logback-classic "1.0.9"]
+                 [ch.qos.logback/logback-classic "1.1.1"]
 
                  ;; If you're using datomic or another library that
                  ;; pulls in other logging crud, you'll probably have
